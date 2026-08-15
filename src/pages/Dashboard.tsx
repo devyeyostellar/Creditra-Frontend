@@ -939,7 +939,7 @@ export function Dashboard() {
          </div>
  
          <div>
-           <div className="card" style={animDelay({ animationDelay: "0.12s" })}>
+           <div className="card sticky-bottom-bar" style={animDelay({ animationDelay: "0.12s" })}>
              <h2><span className="icon">⚡</span> Quick Actions</h2>
              <div className="quick-actions-grid">
                {!hasLines && (

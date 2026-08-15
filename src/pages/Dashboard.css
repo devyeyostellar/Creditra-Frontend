@@ -411,6 +411,12 @@
 
 /* ─── Quick Actions ─────────────────────────────────────────────────────────── */
 
+.sticky-bottom-bar {
+    position: sticky;
+    bottom: var(--space-4);
+    z-index: 100;
+}
+
 .quick-actions-grid {
     display: flex;
     flex-direction: column;
