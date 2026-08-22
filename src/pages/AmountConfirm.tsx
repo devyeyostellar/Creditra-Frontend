@@ -71,7 +71,10 @@ export function AmountConfirm({
     .join(' ');
 
   return (
-    <form
+    <div aria-live="polite" className="sr-only">
+        {isMatch ? "Amount matches. You can now confirm." : (typed ? "Amount does not match yet." : "")}
+      </div>
+      <form
       className={classes}
       onSubmit={handleSubmit}
       aria-labelledby="amount-confirm-heading"
