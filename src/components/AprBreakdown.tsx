@@ -71,7 +71,7 @@ export function AprBreakdown({ totalApr, components, className = '' }: AprBreakd
         </div>
         <button
           id={buttonId}
-          className="apr-breakdown__toggle"
+          className="apr-breakdown__toggle focus-ring"
           aria-expanded={isOpen}
           aria-controls={panelId}
           onClick={() => setIsOpen(!isOpen)}
@@ -137,7 +137,7 @@ export function AprBreakdown({ totalApr, components, className = '' }: AprBreakd
                     </span>
                   </div>
                   <button
-                    className="apr-breakdown__component-expand"
+                    className="apr-breakdown__component-expand focus-ring"
                     aria-expanded={expandedIndex === idx}
                     onClick={() =>
                       setExpandedIndex(expandedIndex === idx ? null : idx)
